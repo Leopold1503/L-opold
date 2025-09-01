@@ -22,7 +22,7 @@ jobs:
 
       - name: Build EXE (onefile, no console)
         run: |
-          pyinstaller --onefile --noconsole Traitement NPAI.py --hidden-import win32com.client
+          pyinstaller --onefile --noconsole "Traitement NPAI.py" --hidden-import win32com.client
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
